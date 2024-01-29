@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Special Invitation</title>
+</head>
+<body>
+
+    <header>
+        <h1>Special Invitation</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Hey there!</p>
+            <p>I've been thinking and was wondering if you'd like to go out with me on a date?</p>
+            <p>If yes, click the button below!</p>
+            <button id="yesButton">Yes, I'd love to!</button>
+        </section>
+
+        <section id="responseMessage" style="display: none;">
+            <p>Great! I'm looking forward to it!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            document.getElementById('responseMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
